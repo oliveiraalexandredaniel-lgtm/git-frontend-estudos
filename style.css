@@ -55,7 +55,7 @@ body {
   width: 480px;
   height: 180px;
   background-color: #ffff00; 
-  border: 8px solid #444444; 
+  border: 2px solid #3b506b; 
   border-radius: 28px;
   z-index: 1;
 }
@@ -203,4 +203,71 @@ footer {
   font-size: 28px;
   color: #3b506b; /* Mesma cor de destaque da sua paleta */
   font-weight: bold;
+}
+
+nav a {
+  color: #3b506b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Suaviza a caixa de destaque */
+.hero-box { /* substitua pela sua classe */
+  border: 2px solid #3b506b;
+  border-radius: 12px;
+  padding: 20px 40px;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.form-secao, .info-secao {
+  flex: 1; /* Divide a tela em duas partes iguais */
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid #3b506b;
+}
+
+/* Estilo dos campos do formulário */
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input, .campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-enviar {
+  background-color: #3b506b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-enviar:hover {
+  background-color: #2b3b50;
 }
