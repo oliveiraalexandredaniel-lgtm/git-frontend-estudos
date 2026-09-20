@@ -3,81 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marcenaria S J Campos</title>
+  <title>Marcenaria S J Campos - Estado da Arte</title>
+  
+  <!-- [RECURSO BOOTSTRAP 1]: Link do CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Seu CSS Personalizado -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- [RECURSO BOOTSTRAP 2]: Navbar Responsiva -->
   <header>
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contatos.html">Contatos</a>
+    <nav class="navbar navbar-expand-lg bg-burlywood">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-dark" href="index.html">Marcenaria SJCampos</a>
+        
+        <!-- Botão hambúrguer para celular -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link active fw-semibold" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="contatos.html">Contatos</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="conteudo">
+  <main class="py-4">
 
-
-    <section class="hero">
-      <div class="bloco-fundo"></div>
-      <h1>Marcenaria SJCampos</h1>
-      <p>móveis planejados</p>
+    <!-- [RECURSO BOOTSTRAP 3]: Carousel / Carrossel de Imagens -->
+    <section class="container mb-5">
+      <div id="carouselMarcenaria" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselMarcenaria" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselMarcenaria" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Sala-ft.jpg" class="d-block w-100 hero-carousel-img" alt="Salas Planejadas">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Salas & Móveis Planejados</h5>
+              <p>Design exclusivo e sob medida para o seu lar.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Cozinha-ft.jpg" class="d-block w-100 hero-carousel-img" alt="Cozinhas Sob Medida">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Cozinhas de Alto Padrão</h5>
+              <p>Otimização de espaço com acabamento fino.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarcenaria" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMarcenaria" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </section>
 
-
-    <section class="cards-conteiner">
-
-      <div class="card">
-        <img src="Sala.jpg" alt="">
-        <h3>Móveis planejados</h3>
-        <p>Projetos sob medida para qualquer ambiente.</p>
+    <!-- [RECURSO BOOTSTRAP 4]: Hero Section / Banner com Botão CTA -->
+    <section class="container text-center mb-5">
+      <div class="hero-box p-4 bg-warning bg-opacity-25 border border-2 border-dark rounded-4 shadow-sm">
+        <h1 class="display-5 fw-bold mb-3">Marcenaria SJCampos</h1>
+        
+        <!-- [RECURSO BOOTSTRAP 5]: Botão que dispara o Modal -->
+        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#modalProjetos">
+          Ver Destaques
+        </button>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="Cozinha.jpg" alt="">
-        <h3>Cozinhas Sob Medida</h3>
-        <p>Otimização de espaço com acabamento fino.</p>
-      </div>
-      
-      <div class="card">
-        <img src="Atendimento.jpg" alt="">
-        <h3>Atendimento Prévio</h3>
-        <p>Sistema de atendimento dedicado.</p>
-      </div>
-      
-      <div class="card">
-        <img src="dormitório.jpg" alt="">
-        <h3>Dormitórios e Closets</h3>
-        <p>Guarda-roupas e painéis personalizados para o seu descanso.</p>
-      </div>
+    <!-- [RECURSO BOOTSTRAP 6]: Grid System (Container, Row e Cols) e Cards -->
+    <section class="container">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row g-4">
+        
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-2">
+            <img src="Sala-ft.jpg" class="card-img-top" alt="Móveis planejados">
+            <div class="card-body text-center">
+              <!-- [RECURSO BOOTSTRAP 7]: Badge -->
+              <span class="badge bg-warning text-dark mb-2">Mais Pedido</span>
+              <h5 class="card-title fw-bold">Móveis Planejados</h5>
+              <p class="card-text">Projetos sob medida para qualquer ambiente do seu lar.</p>
+            </div>
+          </div>
+        </div>
 
-        <div class="card">
-        <img src="ferramentas.jpg" alt="">
-        <h3>Assistencias</h3>
-      </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-2">
+            <img src="Cozinha-ft.jpg" class="card-img-top" alt="Cozinhas Sob Medida">
+            <div class="card-body text-center">
+              <span class="badge bg-dark mb-2">Acabamento Fino</span>
+              <h5 class="card-title fw-bold">Cozinhas Sob Medida</h5>
+              <p class="card-text">Otimização de espaço com máxima funcionalidade.</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-2">
+            <img src="Atendimento.jpg" class="card-img-top" alt="Atendimento Prévio">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Atendimento Prévio</h5>
+              <p class="card-text">Consultoria dedicada para entender o seu projeto.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-2">
+            <img src="dormitório-closet.jpg" class="card-img-top" alt="Dormitórios e Closets">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Dormitórios e Closets</h5>
+              <p class="card-text">Guarda-roupas e painéis personalizados para o seu conforto.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-2">
+            <img src="Assistência.jpg" class="card-img-top" alt="Assistências">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Garantia</span>
+              <h5 class="card-title fw-bold">Assistências</h5>
+              <p class="card-text">Manutenção e suporte especializado pós-entrega.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <div class="footer">
-        <h4>Marcenaria S-J-Campos</h4>
-        <p>Projetos planejados e móveis sob medida com excelência e acabamento fino.</p>
+  <!-- [RECURSO BOOTSTRAP 8]: Modal (Janela Pop-up) -->
+  <div class="modal fade" id="modalProjetos" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-burlywood">
+          <h5 class="modal-title fw-bold">Diferenciais SJCampos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Trabalhamos com mdf de alta densidade, ferragens com amortecimento e projetos 3D para você visualizar seu espaço antes da fabricação!</p>
+        </div>
+        <div class="modal-footer">
+          <a href="contatos.html" class="btn btn-warning fw-bold">Solicitar Orçamento</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
     </div>
-    <div class="footer-bloco">
-      <h4>Contato</h4>
-      <p>WhatsApp: (12) 99999-9999</p>
-      <p>E-mail: contato@marcenariasjc.com.br</p>
-      <p>São José dos Campos - SP</p>
-    </div>
-    <div class="footer-bloco">
-      <h4>Redes Sociais</h4>
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
+  </div>
+
+  <!-- Rodapé Responsivo com Grid do Bootstrap -->
+  <footer class="bg-burlywood py-4 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h4 class="fw-bold">Marcenaria S-J-Campos</h4>
+          <p>Projetos planejados e móveis sob medida com excelência e acabamento fino.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4 class="fw-bold">Contato</h4>
+          <p class="mb-1">WhatsApp: (12) 99999-9999</p>
+          <p class="mb-1">E-mail: contato@marcenariasjc.com.br</p>
+          <p class="mb-1">São José dos Campos - SP</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4 class="fw-bold">Redes Sociais</h4>
+          <a href="#" class="d-block text-dark text-decoration-none mb-1">Instagram</a>
+          <a href="#" class="d-block text-dark text-decoration-none">Facebook</a>
+        </div>
+      </div>
+      <div class="text-center pt-3 mt-3 border-top border-dark border-opacity-25">
+        <p class="mb-0 small">&copy; 2026 Marcenaria S J Campos. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
 
+  <!-- Script JS do Bootstrap (Obrigatório para Carrossel, Navbar e Modal funcionarem) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

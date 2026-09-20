@@ -3,66 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marcenaria S-J-Campos</title>
+  <title>Marcenaria S-J-Campos - Sobre</title>
+  
+  <!-- CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Seu CSS Personalizado -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Menu de Navegação Responsivo (Navbar Bootstrap) -->
   <header>
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">sobre</a>
-      <a href="contatos.html">Contatos</a>
+    <nav class="navbar navbar-expand-lg bg-burlywood">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-dark" href="index.html">Marcenaria SJCampos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link active fw-semibold" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="contatos.html">Contatos</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="sobre-container">
-
-    <section class="diferenciais-grid">
-        <div class="quadro">
-            <h3>Nosso Objetivo</h3>
-            <p>Entregar móveis sob medida com excelência e acabamento fino.</p>
-        </div>
+  <main class="py-5">
+    <div class="container">
       
-        <div class="quadro">
-            <h3>Visão</h3>
-            <p>Ser referência em marcenaria planejada na cidade de São José dos Campos.</p>
+      <!-- Seção com os 3 Quadros (Diferenciais / Grid Bootstrap) -->
+      <section class="row g-4 mb-4 text-center">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-2 p-3">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2 fs-6">Propósito</span>
+              <h3 class="card-title fw-bold h4">Nosso Objetivo</h3>
+              <p class="card-text">Entregar móveis sob medida com excelência e acabamento fino.</p>
+            </div>
+          </div>
         </div>
-        <div class="quadro">
-            <h3>Valores</h3>
-            <p>Qualidade, pontualidade e respeito ao cliente.</p>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-2 p-3">
+            <div class="card-body">
+              <span class="badge bg-dark mb-2 fs-6">Futuro</span>
+              <h3 class="card-title fw-bold h4">Visão</h3>
+              <p class="card-text">Ser referência em marcenaria planejada na cidade de São José dos Campos.</p>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <div class="linha-setas">
-      <span>↓</span>
-      <span>↓</span>
-      <span>↓</span>
-    </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm border-2 p-3">
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2 fs-6">Pilares</span>
+              <h3 class="card-title fw-bold h4">Valores</h3>
+              <p class="card-text">Qualidade, pontualidade e respeito ao cliente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Linha de Setas Indicativas -->
+      <div class="row text-center my-3 text-secondary display-6">
+        <div class="col-4">↓</div>
+        <div class="col-4">↓</div>
+        <div class="col-4">↓</div>
+      </div>
 
-    <div class="apatico">
-        <p>Há mais de 6 anos produzindo estruturas à base de MDF (Medium Density Fiberboard – painel de fibras de madeira de média densidade, reconhecido pela resistência e acabamento refinado), a marcenaria se destacou pela administração persistente e pelo compromisso com três pilares: visão, missão e valores. A visão é ser referência em marcenaria planejada, antecipando tendências e criando ambientes funcionais; a missão é entregar móveis sob medida com excelência, ouvindo cada cliente e transformando suas necessidades em projetos exclusivos; e os valores se refletem em qualidade, pontualidade e respeito, tanto na organização interna quanto na relação transparente e confiável com os clientes.</p>  
-        <p>A marcenaria busca ser referência em marcenaria planejada na cidade de São José dos Campos, antecipando tendências e oferecendo soluções criativas que unem estética e funcionalidade. Essa visão se traduz em projetos que não apenas atendem às necessidades imediatas dos clientes, mas também criam ambientes duradouros e inspiradores, como escritórios que favorecem a produtividade ou residências que equilibram conforto e design, sempre com foco em inovação e excelência.</p>
-        <p>Os valores que sustentam a empresa são qualidade, pontualidade e respeito, aplicados tanto no ambiente interno quanto na relação com os clientes. Isso significa processos organizados, prazos cumpridos e atenção aos detalhes, mas também transparência nas negociações e comunicação clara em cada etapa. No dia a dia, esses princípios se refletem em atitudes simples, como manter o cliente informado diante de imprevistos e buscar soluções rápidas, reforçando credibilidade e confiança em cada entrega.</p>
+      <!-- Seção de Textos Detalhados (Grid de 3 Colunas Responsivas) -->
+      <section class="bg-light p-4 rounded-3 border shadow-sm">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <p class="mb-0">Há mais de 6 anos produzindo estruturas à base de MDF (Medium Density Fiberboard – painel de fibras de madeira de média densidade, reconhecido pela resistência e acabamento refinado), a marcenaria se destacou pela administração persistente e pelo compromisso com três pilares: visão, missão e valores. A visão é ser referência em marcenaria planejada, antecipando tendências e criando ambientes funcionais; a missão é entregar móveis sob medida com excelência, ouvindo cada cliente e transformando suas necessidades em projetos exclusivos; e os valores se refletem em qualidade, pontualidade e respeito, tanto na organização interna quanto na relação transparente e confiável com os clientes.</p>
+          </div>
+          
+          <div class="col-12 col-md-4">
+            <p class="mb-0">A marcenaria busca ser referência em marcenaria planejada na cidade de São José dos Campos, antecipando tendências e oferecendo soluções criativas que unem estética e funcionalidade. Essa visão se traduz em projetos que não apenas atendem às necessidades imediatas dos clientes, mas também criam ambientes duradouros e inspiradores, como escritórios que favorecem a produtividade ou residências que equilibram conforto e design, sempre com foco em inovação e excelência.</p>
+          </div>
+          
+          <div class="col-12 col-md-4">
+            <p class="mb-0">Os valores que sustentam a empresa são qualidade, pontualidade e respeito, aplicados tanto no ambiente interno quanto na relação com os clientes. Isso significa processos organizados, prazos cumpridos e atenção aos detalhes, mas também transparência nas negociações e comunicação clara em cada etapa. No dia a dia, esses princípios se refletem em atitudes simples, como manter o cliente informado diante de imprevistos e buscar soluções rápidas, reforçando credibilidade e confiança em cada entrega.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
-  <footer>
-  <div class="footer-conteudo">
-    <div class="footer-bloco">
-      <h4>Marcenaria SJCampos</h4>
-      <p>Tradição e inovação em móveis planejados desde 2020 no Vale do Paraíba.</p>
-    </div>
+  <!-- Rodapé Responsivo com Bootstrap -->
+  <footer class="bg-burlywood py-4 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <h4 class="fw-bold">Marcenaria SJCampos</h4>
+          <p class="mb-0">Tradição e inovação em móveis planejados desde 2020 no Vale do Paraíba.</p>
+        </div>
 
-    <div class="footer-bloco">
-      <h4>Atendimento</h4>
-      <p>Segunda a Sexta: 08h às 18h</p>
-      <p>Sábado: 08h às 12h</p>
-    </div>
-  </div>
+        <div class="col-12 col-md-6">
+          <h4 class="fw-bold">Atendimento</h4>
+          <p class="mb-1">Segunda a Sexta: 08h às 18h</p>
+          <p class="mb-0">Sábado: 08h às 12h</p>
+        </div>
+      </div>
 
-  <div class="footer-copy">
-    <p> 2026 Marcenaria SJCampos. Todos os direitos reservados.</p>
-  </div>
+      <div class="text-center pt-3 mt-3 border-top border-dark border-opacity-25">
+        <p class="mb-0 small">&copy; 2026 Marcenaria SJCampos. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Script JS do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

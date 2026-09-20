@@ -1,273 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* ===================================================
+   ESTILOS PERSONALIZADOS (MARCENARIA SJ CAMPOS)
+   =================================================== */
 
 body {
-  background-color: #ffffff;
-  border-right: 100px solid;
-  border-left: 90px solid;
+  background-color: #f8f9fa;
   min-height: 100vh;
 }
 
-
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  padding: 20px;
-  background-color: burlywood;
+/* Cor Burlywood usada na versão original */
+.bg-burlywood {
+  background-color: burlywood !important;
 }
 
-.navbar a {
-  color: #551a8b;
-  text-decoration: underline;
-  font-size: 18px;
-}
-
-
-.conteudo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  padding: 40px 20px;
-}
-
-
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 220px;
-}
-
-.bloco-fundo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 480px;
-  height: 180px;
-  background-color: #ffff00; 
-  border: 2px solid #3b506b; 
-  border-radius: 28px;
-  z-index: 1;
-}
-
-.hero h1 {
-  position: relative;
-  z-index: 10;
-  font-size: 36px;
-  font-weight: bold;
-  color: #000000;
-  margin-bottom: 20px;
-}
-
-.btn-entrar {
-  position: relative;
-  z-index: 10;
-  color: #551a8b;
-  font-size: 16px;
-}
-
-
-.cards-conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 200px;
-  width: 100%;
-  max-width: 1000px;
-}
-
-
-.card {
-  width: 320px;
-  background-color: #ffffff;
-  border: 5px solid #444444; 
-  border-radius: 2px;
-  overflow: hidden; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
+/* Ajuste de altura das imagens no Carrossel */
+.hero-carousel-img {
+  height: 350px;
   object-fit: cover;
-  display: block;
 }
 
-.card h3 {
-  padding: 15px 10px 5px 10px;
-  font-size: 20px;
-  color: #000000;
+/* Padronização dos Cards de Produtos */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
 }
 
-.card p {
-  padding: 0 15px 15px 15px;
-  font-size: 14px;
-  color: #333333;
-}
-
-footer {
-  background-color: burlywood;
-  color: #0e0d0d;
-  padding: 40px 20px 10px 20px;
-  margin-top: 50px;
-} 
-
-.footer-conteudo {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1100px;
+/* Personalização suave para o Hero Box */
+.hero-box {
+  max-width: 700px;
   margin: 0 auto;
 }
 
-.footer-bloco h4 {
-  margin-bottom: 12px;
-  font-size: 18px;
+/* Links do menu */
+.nav-link {
+  color: #3b506b !important;
 }
 
-.footer-bloco p, .footer-bloco a {
-  color: #0f0f0f;
-  font-size: 14px;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 6px;
-}
-
-.footer-bloco a:hover {
+.nav-link:hover {
   text-decoration: underline;
-}
-
-.footer-copy {
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 30px;
-  padding-top: 15px;
-  font-size: 12px;
-  color: #cccccc;
-}
-
-.diferenciais-grid {
-  display: grid;
-  /* Cria colunas de tamanho igual automaticamente */
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.quadro {
-  background-color: #f4f4f4;
-  padding: 30px;
-  border-radius: 8px;
-  border-left: 5px solid #3b506b; /* Detalhe visual na lateral */
-}
-
-.apatico {
-  display: flex;
-  justify-content: space-between; /* Distribui os 3 igualmente lado a lado */
-  gap: 30px;
-  max-width: 1300px; /* Impede que os cards encostem nas pontas em telas grandes */
-  margin: 40px auto;  /* Centraliza a seção na tela e dá espaço no topo/base */
-  padding: 0 20px;
-  background-color: #cccccc;
-  border-radius: 5px;
-}
-
-.apatico p {
-  
-  flex: 1; /* Força os 3 a terem exatamente a mesma largura */
-  word-break: break-word; /* Garante que palavras longas ou frases quebrem linha */
-}
-
-.linha-setas {
-  display: flex;
-  justify-content: space-around; /* Mantém as setas alinhadas com os 3 cards */
-  margin: 10px 0;
-}
-
-.linha-setas span {
-  font-size: 28px;
-  color: #3b506b; /* Mesma cor de destaque da sua paleta */
-  font-weight: bold;
-}
-
-nav a {
-  color: #3b506b;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Suaviza a caixa de destaque */
-.hero-box { /* substitua pela sua classe */
-  border: 2px solid #3b506b;
-  border-radius: 12px;
-  padding: 20px 40px;
-}
-
-.contato-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.form-secao, .info-secao {
-  flex: 1; /* Divide a tela em duas partes iguais */
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  border: 2px solid #3b506b;
-}
-
-/* Estilo dos campos do formulário */
-.campo {
-  margin-bottom: 15px;
-}
-
-.campo label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.campo input, .campo textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.btn-enviar {
-  background-color: #3b506b;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn-enviar:hover {
-  background-color: #2b3b50;
 }
